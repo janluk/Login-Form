@@ -1,0 +1,179 @@
+body {
+	color: #f8f8f8;
+	font-family: 'Trebuchet MS';
+	background: #c31432;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 10%;
+	bottom: 0;
+	left: 10%;
+	max-width: 1000px;
+	height: 540px;
+	-webkit-box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.18);
+	box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.18);
+}
+
+/* LOGIN SECTION */
+.main .formSection {
+	height: 62%;
+	width: 100%;
+	background-color: #c31432;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+.formSection p.or {
+    background-color: #C31432;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    left: 47%;
+}
+
+.formSection form input{
+	background-color: #f8f8f8;
+	border-radius: 25px;
+	border: none;
+	height: 35px;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 70%;
+}
+
+.formSection form input:focus {
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(36, 11, 54, .5);
+}
+
+.formSection form input[type="submit"] {
+	color: #f8f8f8;
+	cursor: pointer;
+	font-weight: bold;
+	background: #45093f;  /* fallback for old browsers */
+	background-image: -webkit-linear-gradient(to top, #250b36, #45093f, #650342, #84003d, #9e1233); /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to top, #250b36, #45093f, #650342, #84003d, #9e1233); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-moz-transition: all 1.5s;
+	-o-transition: all 1.5s;
+	transition: all 1.5s;
+}
+
+.formSection form input[type="submit"]:hover {
+   background-image: none;
+   background-color: #250b36;
+}
+
+.formSection p.forget:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* SIGNIN SECTION */
+
+.main .socialSection {
+	background-color: rgba(255,255,255,.1);
+	height: 38%;
+	width: 100%;
+	text-align: center;
+	float: right;
+}
+
+.main .socialSection .socialIcon { margin-top: 24px; }
+
+.socialSection .socialIcon button {
+	background-color: #fff;
+	border-radius: 50%;
+	border: none;
+	font-size: 18px;
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+}
+
+.socialSection .socialIcon button:last-child { margin-right: 0; }
+
+.socialIcon .twitter,
+.socialIcon .facebook,
+.socialIcon .google {
+	cursor: pointer;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	-webkit-box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.18);
+	box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.18);
+}
+
+.socialIcon .twitter { color: #55acee; }
+
+.socialIcon .twitter:hover {
+	background-color: #55acee;
+	color: #fff;
+}
+
+.socialIcon .facebook { color: #012677; }
+
+.socialIcon .facebook:hover {
+	background-color: #012677;
+	color: #fff;
+}
+
+.socialIcon .google { color: #d50f25; }
+
+.socialIcon .google:hover {
+	background-color: #d50f25;
+	color: #fff;
+}
+
+/* RESPONSIVE */
+@media only screen and (min-width: 768px) {
+	.main {
+	   right: 2%;
+	   left: 2%;
+	   height: 500px;
+	}
+
+	.main .formSection {
+		height: 100%;
+		width: 50%;
+	}
+
+	.main .formSection h1,
+	.main .socialSection h1 {
+		margin-top: 100px;
+	}
+
+	.formSection p.or {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		left: 96%;
+		bottom: 45%;
+	}
+
+	.main .socialSection {
+		height: 100%;
+		width: 50%;
+	}
+
+	.main .socialSection .socialIcon { margin-top: 40px; }
+}
+
+@media only screen and (max-height: 545px) {
+	.main {
+		position: static;
+		margin: 20px;
+	}
+}
+
+
